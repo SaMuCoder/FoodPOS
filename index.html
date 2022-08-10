@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FoodPos</title>
+</head>
+
+<body onload="renderMenu()">
+    <div class="logo"><img src="img/logo.svg" alt=""></div>
+    <section class="menus">
+        <div class="container-menus">
+            <div class="categorias">
+                <div class="backButton">
+                    <button> <img src="img/setaEsquerda.svg" alt=""></button>
+                </div>
+                <div class="categoria">
+                    <h2>Categorias</h2>
+                </div>
+                <div class="cat-atual" id="cat-atual"></div>
+            </div>
+            <div class="grid-menus" id="grid-comida">
+                <!-- Grid content-->
+            </div>
+            <di class="container-pagamento">
+                <div class="titulo-lista">
+                    <h2>Lista de produtos</h2>
+                </div>
+                <div class="lista fechado">
+                    <ul id="listaProdutos" class="listaProdutos">
+                        <li>
+                            <div class="listaproduct">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <div class="buttons">
+                                    <button class="change">
+                                        <img src="/img/edit.svg" alt="" srcset="">
+                                    </button>
+                                    <button class="delete">
+                                        <img src="img/trash-alt.svg" alt="" srcset="">
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="abrirlista">
+                        <button class="expand-btn"><img src="img/chevron-up.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="pagamento">
+                    <h3>Total</h3>
+                    <div class="preco-pagar">
+                        <div dlass="preco-pay" id="precoTotal">0.00€</div>
+                        <button class="btn-pagar">Pagar</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <div class="filtro"></div>
+    <div class="modal">
+        <button class="fechar-modal">
+            <img src="img/close.svg" alt="" srcset="">
+        </button>
+        <div id="modalContent">
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

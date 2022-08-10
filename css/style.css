@@ -1,0 +1,923 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700;800&display=swap");
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+       appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+       appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-image: url("../img/img-fundo.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.logo {
+  left: 20%;
+  padding: 2rem;
+  margin-left: 13%;
+}
+
+.menus {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-menus {
+  padding: 2.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 2rem;
+}
+
+.cat, .cat-food {
+  /* gap: 1rem; */
+  /* padding-top: 3rem; */
+  background-color: white;
+  color: black;
+  border-radius: 1.5rem;
+  width: 18rem;
+  height: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+  box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.3);
+}
+.cat .img, .cat-food .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cat .titulo-cat, .cat-food .titulo-cat {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cat .titulo-cat h3, .cat-food .titulo-cat h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+}
+.cat .circulo-laranja, .cat-food .circulo-laranja {
+  width: 100px;
+  height: 100px;
+  background-color: #FFC301;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cat .circulo-laranja img, .cat-food .circulo-laranja img {
+  width: 50px;
+  height: 50px;
+}
+.cat:hover, .cat-food:hover {
+  background-color: #FFC301;
+  color: white;
+}
+
+.container-menus {
+  display: flex;
+}
+.container-menus .categorias {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: absolute;
+}
+.container-menus .categorias .cat-atual {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.container-menus .categorias .categoria {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container-menus .categorias .backButton img {
+  width: 25px;
+}
+
+.container-pagamento {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.container-pagamento h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.container-pagamento .lista {
+  background-color: white;
+  color: #333533;
+  font-family: "Lato", sans-serif;
+  border-radius: 1.5rem;
+  width: 400px;
+  height: 467px;
+  padding: 1rem;
+  box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.3);
+  overflow: overlay;
+}
+.container-pagamento .lista .listaProdutos .listaproduct {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 1fr;
+  justify-content: start;
+  align-items: center;
+  padding: 0.1rem;
+}
+.container-pagamento .lista .listaProdutos .listaproduct .comida {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.container-pagamento .lista .listaProdutos .listaproduct .buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+.container-pagamento .lista .listaProdutos .listaproduct .buttons .change {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: #FFC301;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.container-pagamento .lista .listaProdutos .listaproduct .buttons .change img {
+  width: 15px;
+}
+.container-pagamento .lista .listaProdutos .listaproduct .buttons .delete {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: #FFC301;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.container-pagamento .lista .listaProdutos .listaproduct .buttons .delete img {
+  width: 13px;
+}
+.container-pagamento .pagamento {
+  background-color: #FFC301;
+  border-radius: 1.5rem;
+  width: 400px;
+  height: 126px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 1.3rem;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container-pagamento .pagamento .preco-pagar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  font-weight: 700;
+  font-size: 38px;
+}
+.container-pagamento .pagamento .btn-pagar {
+  background-color: #333533;
+  border-radius: 1rem;
+  width: 120px;
+  height: 65px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.cat-food:hover {
+  background-color: white;
+  color: black;
+}
+.cat-food .titulo-cat {
+  gap: 5rem;
+}
+.cat-food .titulo-cat .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+}
+.cat-food .titulo-cat .content h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+.cat-food .titulo-cat .btn-plus {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  background-color: #FFC301;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+}
+.cat-food .item {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cat-food .item img {
+  width: 150px;
+  height: 150px;
+}
+
+.filtro {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  transition: 0.3s;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  height: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 500px;
+  height: 500px;
+}
+.modal .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.modal h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+}
+.modal h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+}
+.modal h5 {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+.modal-fotoComida {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
+}
+
+.conta {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.total {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #FFC301;
+}
+
+.total-preco {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.modal-listaFatura {
+  height: 250px;
+  overflow: overlay;
+}
+.modal-listaFatura .comida {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.modal-listaFatura p {
+  font-family: "Lato", sans-serif;
+}
+
+.modal-listaFatura-listItem {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.backButton {
+  transform: scaleX(-1);
+  display: none;
+}
+
+.backButton--open {
+  display: block;
+}
+
+.cont_quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quantidade {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.adicionar, .addTotal {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.adicionar .add, .addTotal .add {
+  border: none;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  text-align: center;
+  width: 230px;
+  height: 50px;
+  border-radius: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.addTotal {
+  flex-direction: column;
+}
+
+.btn-confirmar {
+  display: flex;
+  justify-content: center;
+}
+.btn-confirmar .add {
+  border: none;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  text-align: center;
+  width: 230px;
+  height: 50px;
+  border-radius: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.valor-quantidade {
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.aberto {
+  display: block;
+}
+
+.modal .fechar-modal {
+  width: 50px;
+  height: 50px;
+  background-color: #FFC301;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: -25px;
+  right: 25px;
+}
+
+.btn-plus {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: #FFC301;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+}
+
+.btn-minus {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: #FFC301;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+}
+
+.abrirlista {
+  display: none;
+}
+
+.expand-btn {
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.expand-btn.aberto {
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid-menus {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-menus {
+    flex-direction: column;
+  }
+  /*   .container-pagamento {
+    display: none;
+  } */
+  .container-pagamento {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    align-items: center;
+    left: 29%;
+    bottom: -35%;
+  }
+  /*   .lista{
+    height: 70px;
+  } */
+  .titulo-lista {
+    display: none;
+  }
+  .container-mobile {
+    display: block;
+  }
+  .container-pagamento .lista {
+    height: 70px;
+  }
+  .abrirlista {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+  }
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+  .listaProdutos .listaproduct {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 1fr;
+    justify-content: start;
+    align-items: center;
+    padding: 0.1rem;
+    background-color: white;
+  }
+  .listaProdutos .listaproduct .comida {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+  }
+  .listaProdutos .listaproduct .buttons {
+    display: flex;
+    gap: 0.8rem;
+  }
+  .listaProdutos .listaproduct .buttons .change {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: #FFC301;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  .listaProdutos .listaproduct .buttons .change img {
+    width: 15px;
+  }
+  .listaProdutos .listaproduct .buttons .delete {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: #FFC301;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  .listaProdutos .listaproduct .buttons .delete img {
+    width: 13px;
+  }
+}/*# sourceMappingURL=style.css.map */
